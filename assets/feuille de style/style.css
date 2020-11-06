@@ -1,0 +1,136 @@
+header{
+
+    /* ajout de l'image de fond */
+    background-image: url('../images/header.jpg');
+    /* redimension de l'image pour qu'elle couvre la page */
+    background-size:cover;
+    height:450px;
+    /* définition d'un container flexible */
+    display: flex;
+    /* alignement horizontal centrage des enfts du header */
+    justify-content: center;
+    /* alignement vertical centrage des enfts du header */
+    align-items:center;
+    font:size 400px;   
+}
+/* Navbar */
+ul{
+
+    /* enlève les puces aux items de la liste */
+    list-style-type: none;
+    display:flex;
+    /* alignement horizontal des enfants avec répartition uniforme dans la ligne avec un espace égal autour des enfants */
+    justify-content:space-around;
+    font-size: 25px;
+}
+a{
+    /* supression du texte souligné */
+    text-decoration: none;
+    /* texte en noir */
+    color: #000000;
+}
+/* sur grand écran l'icône est masqué */
+#navIcon{
+    display:none;
+}
+
+/* présentation */
+
+#presentation{
+    /*  marges intérieures de la div */
+    padding:15px;
+    /* couleur de fond sable */
+    background-color:rgb(238, 128, 85)
+    
+}
+
+img{
+    width:75% ;
+
+}
+.block{
+    /* centre les éléments dans la div */
+    text-align: center;
+    /* marges extérieurs de la div (y x) */
+    margin:15px 10px;
+}
+p{
+    text-align:justify;
+}
+
+
+/* Media queries */
+/* Pour une largeur d'écran inférieure à 992px la ligne bloc ne sera pas alignée horizontalement mais verticalement */
+@media screen and (max-width:992px){
+
+    #blockLine{
+        flex-direction: column;
+    }
+}
+
+/* Pour une largeur d'écran inférieur à 680px */
+@media screen and (max-width:680px){
+    /* on masque les éléments de la navbar */
+a,form{
+    display: none;
+
+}
+   /*on affiche l'icône du menu burger  */
+   #navIcon{
+    display: block;
+   }
+
+
+
+}
+section{
+    padding: 35px;
+    background-color: coral;
+}
+#blockLine{
+    display:flex;
+}
+
+img{
+width:75%;
+}
+.block{
+    text-align: center;
+    margin: 15px 10px;
+
+}
+
+
+    
+ 
+#blockLine{
+text-align: center;
+margin: 15px 10px;
+}
+p{
+    text-align: justify;
+}
+@media screen and (max-width:992px){
+#blockLine{
+    flex-direction:colum;
+
+}
+@media screen and (max-width: 680px){
+a,form{
+    display: none;
+}
+#navIcon{
+    display:block;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
