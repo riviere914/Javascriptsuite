@@ -1,0 +1,22 @@
+.green{
+  background-color:green
+}
+.red{
+    background-color:red
+
+}
+    
+.blue{
+    background-color:blue
+
+
+}
+.color{
+
+    color:white;
+
+    widows: 25px;
+    height: 25px;
+    margin : 10px;
+    float : left;
+}

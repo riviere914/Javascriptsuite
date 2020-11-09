@@ -1,5 +1,0 @@
-
-
-$("secondText").empty();{
-
-}
